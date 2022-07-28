@@ -6,9 +6,9 @@ class ProductsController < ApplicationController
   }
   end
 
-  def tv
+  def show
     render json: {
-      product: Product.find_by(name: "TV")
+      product: Product.find_by(id: params[:id])
     }
   end
 
