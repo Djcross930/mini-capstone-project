@@ -4,8 +4,18 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "Fridge",
-  "price": 2000,
-  "image_url": "Fridge.com/fridge",
-  "description": "keeps food cool"
-} 
+  "name": "chair",
+  "price": 20,
+  "image_url": "chair.com",
+  "description": "sit on it"
+}
+###
+PATCH http://localhost:3000/products/7
+Content-Type: application/json
+
+{
+  "name": "Big Recliner",
+  "price": 50,
+  "image_url": "recliner.com",
+  "description": "sit back and relax dude"
+}
