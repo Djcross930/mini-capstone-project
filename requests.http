@@ -19,3 +19,5 @@ Content-Type: application/json
   "image_url": "recliner.com",
   "description": "sit back and relax dude"
 }
+###
+DELETE http://localhost:3000/products/5
