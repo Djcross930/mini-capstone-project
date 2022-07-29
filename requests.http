@@ -16,8 +16,8 @@ Content-Type: application/json
 {
   "name": "Big Recliner",
   "price": 50,
-  "image_url": "recliner.com",
+  "image_url": "https://havertys.scene7.com/is/image/Havertys/0-3500-1206?op_sharpen=1&wid=768&hei=512&qlt=70",
   "description": "sit back and relax dude"
 }
 ###
-DELETE http://localhost:3000/products/5
+DELETE http://localhost:3000/products/8
