@@ -1,23 +1,25 @@
 get http://localhost:3000/products
 ###
+
+GET http://localhost:3000/products/11
+
+
+###
 POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "chair",
-  "price": 20,
-  "image_url": "chair.com",
-  "description": "sit on it"
+  "name": "huge table",
+  "price": 25,
+  "image_url": "table.com",
+  "description": "a huge table surface"
 }
 ###
 PATCH http://localhost:3000/products/7
 Content-Type: application/json
 
 {
-  "name": "Big Recliner",
-  "price": 50,
-  "image_url": "https://havertys.scene7.com/is/image/Havertys/0-3500-1206?op_sharpen=1&wid=768&hei=512&qlt=70",
-  "description": "sit back and relax dude"
+  "name": "The Big Recliner"
 }
 ###
 DELETE http://localhost:3000/products/8
