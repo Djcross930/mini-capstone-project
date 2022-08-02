@@ -1,4 +1,4 @@
-get http://localhost:3000/products
+get http://localhost:3000/products.json
 ###
 
 GET http://localhost:3000/products/11.json
@@ -22,4 +22,4 @@ Content-Type: application/json
   "name": "The Big huge gigantic tabl"
 }
 ###
-DELETE http://localhost:3000/products/8
+DELETE http://localhost:3000/products/4
