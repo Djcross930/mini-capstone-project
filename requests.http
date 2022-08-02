@@ -1,25 +1,25 @@
 get http://localhost:3000/products
 ###
 
-GET http://localhost:3000/products/11
+GET http://localhost:3000/products/11.json
 
 
 ###
-POST http://localhost:3000/products
+POST http://localhost:3000/products.json
 Content-Type: application/json
 
 {
-  "name": "huge table",
-  "price": 25,
+  "name": "gigantic huge table",
+  "price": 100,
   "image_url": "table.com",
-  "description": "a huge table surface"
+  "description": "a gigantic huge table surface"
 }
 ###
-PATCH http://localhost:3000/products/7
+PATCH http://localhost:3000/products/13.json
 Content-Type: application/json
 
 {
-  "name": "The Big Recliner"
+  "name": "The Big huge gigantic tabl"
 }
 ###
 DELETE http://localhost:3000/products/8
