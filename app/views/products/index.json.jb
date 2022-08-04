@@ -8,6 +8,7 @@
   image_url: product.image_url,
   description: product.description,
   on_sale: product.is_discoounted?,
+  supplier: product.supplier,
   friendly_created_at: product.friendly_created_at,
   created_at: product.created_at,
   updated_at: product.updated_at
