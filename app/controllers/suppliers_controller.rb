@@ -27,5 +27,12 @@ class SuppliersController < ApplicationController
     render json: supplier.as_json
   end
 
+  def destroy
+    supplier = Supplier.find_by(id: params[:id])
+    supplier.destroy
+    render json: {message: "destroyed"}
+  end
+
+
 
 end

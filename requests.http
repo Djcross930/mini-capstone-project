@@ -53,3 +53,7 @@ Content-Type: application/json
   "email": "big@gmail.com",
   "phone_number": "222-111-4444"
 }
+
+###
+
+DELETE http://localhost:3000/suppliers/3
