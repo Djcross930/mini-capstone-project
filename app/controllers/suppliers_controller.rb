@@ -9,4 +9,14 @@ class SuppliersController < ApplicationController
     render json: supplier.as_json  
   end
 
+  def create
+    supplier = Supplier.new
+    supplier.name = params[:name]
+    supplier.email = params[:email]
+    supplier.phone_number = params[:phone_number]
+    supplier.save
+    render json: supplier.as_json  
+  end
+
+
 end

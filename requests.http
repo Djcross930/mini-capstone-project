@@ -31,3 +31,14 @@ GET http://localhost:3000/suppliers
 ###
 
 GET  http://localhost:3000/suppliers/2
+
+###
+
+POST  http://localhost:3000/suppliers
+Content-Type: application/json
+
+{
+  "name": "the big company",
+  "email": "big@gmail.com",
+  "phone_number": "222-111-4444"
+}
