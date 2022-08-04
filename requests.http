@@ -19,7 +19,7 @@ PATCH http://localhost:3000/products/13.json
 Content-Type: application/json
 
 {
-  "name": "The Big huge gigantic tabl"
+  "name": "gigantic huge table"
 }
 ###
 DELETE http://localhost:3000/products/4
