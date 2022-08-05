@@ -11,7 +11,6 @@ Content-Type: application/json
 {
   "name": "gigantic huge table",
   "price": 100,
-  "image_url": "table.com",
   "description": "a gigantic huge table surface"
 }
 ###
@@ -66,4 +65,16 @@ Content-Type: application/json
 {
   "url": "gooople.com",
   "product_id": 2
+}
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "jimmy",
+  "email": "jimmy@jimbo.com",
+  "password": "password",
+  "password_confirmation": "password"
 }
