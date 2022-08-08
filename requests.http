@@ -21,19 +21,19 @@ Content-Type: application/json
   "name": "gigantic huge table"
 }
 ###
-DELETE http://localhost:3000/products/4
+DELETE http://localhost:3000/products/4.json
 
 ###
 
-GET http://localhost:3000/suppliers
+GET http://localhost:3000/suppliers.json
 
 ###
 
-GET  http://localhost:3000/suppliers/2
+GET  http://localhost:3000/suppliers/2.json
 
 ###
 
-POST  http://localhost:3000/suppliers
+POST  http://localhost:3000/suppliers.json
 Content-Type: application/json
 
 {
@@ -44,7 +44,7 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3000/suppliers/3
+PATCH http://localhost:3000/suppliers/3.json
 Content-Type: application/json
 
 {
@@ -55,11 +55,11 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/suppliers/3
+DELETE http://localhost:3000/suppliers/3.json
 
 ###
 
-POST http://localhost:3000/images
+POST http://localhost:3000/images.json
 Content-Type: application/json
 
 {
@@ -69,7 +69,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/users
+POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
@@ -81,10 +81,26 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/sessions
+POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
   "email": "jimmy@jimbo.com",
   "password": "password"
+}
+
+###
+
+GET http://localhost:3000/products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAwNjIzMzR9.0pvYr6mzBTflpnzlQoQdgkgkBITL1G7yEfcXj9sCnNQ
+
+###
+
+POST http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAwNzE1OTJ9.J1EIhxMgvOngnEW8gyE6QMBhLblUTQbClIBqQ8XsywY
+Content-Type: application/json
+
+{
+  "product_id": 2,
+  "quantity": 2
 }
