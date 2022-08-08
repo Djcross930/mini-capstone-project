@@ -1,4 +1,5 @@
 class Order < ApplicationRecord
+  belongs_to :user
 
   def subtotal
     quantity * Product.find_by(id: product_id).price

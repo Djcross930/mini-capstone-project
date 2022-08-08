@@ -102,5 +102,14 @@ Content-Type: application/json
 
 {
   "product_id": 2,
-  "quantity": 2
+  "quantity": 4
 }
+
+####
+
+GET http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAwNzE1OTJ9.J1EIhxMgvOngnEW8gyE6QMBhLblUTQbClIBqQ8XsywY
+
+###
+GET http://localhost:3000/orders/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAwNzE1OTJ9.J1EIhxMgvOngnEW8gyE6QMBhLblUTQbClIBqQ8XsywY
