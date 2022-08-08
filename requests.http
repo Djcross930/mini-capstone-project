@@ -78,3 +78,13 @@ Content-Type: application/json
   "password": "password",
   "password_confirmation": "password"
 }
+
+###
+
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "jimmy@jimbo.com",
+  "password": "password"
+}
