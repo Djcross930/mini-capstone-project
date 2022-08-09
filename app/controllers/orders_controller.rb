@@ -6,6 +6,9 @@ class OrdersController < ApplicationController
       order.user_id = current_user.id
       order.product_id = params[:product_id]
       order.quantity = params[:quantity]
+      order.subtotal = order.calculated_subtotal
+      order.tax = order.calculated_tax
+      order.total = order.calculated_total
       order.save
       render json: order.as_json
     else
@@ -24,8 +27,8 @@ class OrdersController < ApplicationController
   
   def show
     if current_user
-    order = Order.find_by(id: params[:id])
-    render json: order.as_json
+      order = Order.find_by(id: params[:id])
+      render json: order.as_json
     else
       render json: {message: "log in to view"}
     end

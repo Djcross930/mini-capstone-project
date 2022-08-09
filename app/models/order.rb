@@ -1,15 +1,15 @@
 class Order < ApplicationRecord
   belongs_to :user
 
-  def subtotal
+  def calculated_subtotal
     quantity * Product.find_by(id: product_id).price
   end
 
-  def tax
+  def calculated_tax
     subtotal * 0.09
   end
 
-  def total
+  def calculated_total
     subtotal + tax
   end
 
