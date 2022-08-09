@@ -1,3 +1,8 @@
+@jwt_jim = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAxNTY4MzR9.so2RpEImJvWvgGUeoSWkxMnk9k_0fVmz6qMkFml8X9E
+@jwt_tim = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjAxNTgxOTV9.UI0gF89RBCCh3kPWIl5nl5rpmU7m_6HR6X-hP1AFZxU
+
+
+###
 get http://localhost:3000/products.json
 ###
 
@@ -14,15 +19,16 @@ Content-Type: application/json
   "description": "a gigantic huge table surface"
 }
 ###
-PATCH http://localhost:3000/products/13.json
+PATCH http://localhost:3000/products/3.json
+Authorization: Bearer {{jwt_jim}}
 Content-Type: application/json
 
 {
-  "name": "gigantic huge table"
+  "name": "The blendo 3000"
 }
 ###
-DELETE http://localhost:3000/products/13.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAxNTY4MzR9.so2RpEImJvWvgGUeoSWkxMnk9k_0fVmz6qMkFml8X9E
+DELETE http://localhost:3000/products/8.json
+Authorization: Bearer {{jwt_jim}}
 ###
 
 GET http://localhost:3000/suppliers.json
@@ -85,7 +91,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "jimmy@jimbo.com",
+  "email": "timmy@timmy.com",
   "password": "password"
 }
 
