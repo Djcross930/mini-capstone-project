@@ -21,8 +21,8 @@ Content-Type: application/json
   "name": "gigantic huge table"
 }
 ###
-DELETE http://localhost:3000/products/4.json
-
+DELETE http://localhost:3000/products/13.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAxNTY4MzR9.so2RpEImJvWvgGUeoSWkxMnk9k_0fVmz6qMkFml8X9E
 ###
 
 GET http://localhost:3000/suppliers.json
@@ -73,8 +73,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "jimmy",
-  "email": "jimmy@jimbo.com",
+  "name": "Timmy",
+  "email": "timmy@timmy.com",
   "password": "password",
   "password_confirmation": "password"
 }
