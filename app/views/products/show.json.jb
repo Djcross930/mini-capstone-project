@@ -10,6 +10,7 @@
   supplier: @product.supplier,
   friendly_created_at: @product.friendly_created_at,
   created_at: @product.created_at,
+  categories:@product.categories,
   updated_at: @product.updated_at
 }
 
