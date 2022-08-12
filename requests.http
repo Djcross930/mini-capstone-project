@@ -103,13 +103,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAwNjIzM
 ###
 
 POST http://localhost:3000/orders
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAxNTIzMjB9.XmR5atlAZb3FqN5a6ikIHnGWekWm0d5aCXP4PLagsj0
-Content-Type: application/json
-
-{
-  "product_id": 2,
-  "quantity": 4
-}
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjA0MDc5MzV9.xNqPoFixXmg9D8nlan11SFCc3Ov7oIp_h-s0_EjDaiE
 
 ####
 
@@ -127,11 +121,16 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjA0MDc5M
 Content-Type: application/json
 
 {
-  "product_id": 3,
+  "product_id": 7,
   "quantity": 1
 }
 
 ###
 
 GET http://localhost:3000/carted_products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjA0MDc5MzV9.xNqPoFixXmg9D8nlan11SFCc3Ov7oIp_h-s0_EjDaiE
+
+###
+
+DELETE http://localhost:3000/carted_products/5
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjA0MDc5MzV9.xNqPoFixXmg9D8nlan11SFCc3Ov7oIp_h-s0_EjDaiE
