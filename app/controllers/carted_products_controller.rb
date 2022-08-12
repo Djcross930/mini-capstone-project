@@ -12,4 +12,11 @@ class CartedProductsController < ApplicationController
     end
   end
 
+  def index
+    if current_user
+      carted_products = CartedProduct.where(user_id: current_user.id, status: "carted")
+      render json: carted_products.as_json
+    end
+  end
+
 end
