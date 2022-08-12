@@ -119,3 +119,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAwNzE1O
 ###
 GET http://localhost:3000/orders/1
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjAwNzE1OTJ9.J1EIhxMgvOngnEW8gyE6QMBhLblUTQbClIBqQ8XsywY
+
+###
+
+POST http://localhost:3000/carted_products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NjA0MDc5MzV9.xNqPoFixXmg9D8nlan11SFCc3Ov7oIp_h-s0_EjDaiE
+Content-Type: application/json
+
+{
+  "product_id": 2,
+  "quantity": 4
+}
